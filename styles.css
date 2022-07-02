@@ -1,0 +1,48 @@
+body {
+  background-color: #010b13;
+}
+.wrapper {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon + .icon {
+  margin-left: 1em;
+}
+.icon {
+  color: #fff;
+  font-size: 4em;
+  animation: first-color .9s ease-in-out infinite alternate;
+}
+.icon:nth-child(2) {
+  animation-name: second-color;
+}
+.icon:nth-child(3) {
+  animation-name: third-color;
+}
+@keyframes first-color {
+  0% {
+    text-shadow: 0 0 10px #f72585, 0 0 20px #df2277, 0 0 30px #f72587;
+  }
+  100% {
+    text-shadow: 0 0 5px #f72585, 0 0 10px #df2277, 0 0 15px #f72587;
+  }
+}
+@keyframes second-color {
+  0% {
+    text-shadow: 0 0 10px #3ef725, 0 0 20px #22df32, 0 0 30px #56f725;
+  }
+  100% {
+    text-shadow: 0 0 5px #3ef725, 0 0 10px #22df32, 0 0 15px #56f725;
+  }
+}
+@keyframes third-color {
+  0% {
+    text-shadow: 0 0 10px #9925f7, 0 0 20px #9925f7, 0 0 30px #5d25f7;
+  }
+  100% {
+    text-shadow: 0 0 5px #9925f7, 0 0 10px #9925f7, 0 0 15px #5d25f7;
+  }
+}
